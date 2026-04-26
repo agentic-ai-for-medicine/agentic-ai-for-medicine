@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="keywords" content="miccai, workshop, ai agents, agentic ai">
+
+  <link rel="shortcut icon" href="static/img/site/favicon.png">
+
+  <title>The 2nd Agentic AI for Medicine Workshop @MICCAI 2026</title>
+  <meta name="description" content="Agentic AI for Medicine, MICCAI 2026 Workshop">
+
+  <!--Open Graph Related Stuff
+  <meta property="og:title" content="Vision Meets Physics Workshop"/>
+  <meta property="og:url" content="https://visionmeetphysics.github.io"/>
+  <meta property="og:description" content="Vision Meets Physics, CVPR 2025 Workshop"/>
+  <meta property="og:site_name" content="Vision Meets Physics Workshop"/>
+  <meta property="og:image" content="https://visionmeetphysics.github.io/CVPR2025/static/img/site/teaser.jpg"/>
+  -->
+
+  <!--Twitter Card Stuff
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Language for 3D Scenes Workshop"/>
+  <meta name="twitter:image" content="https://languagefor3dscenes.github.io/ICCV2023/static/img/site/teaser.jpg">
+  <meta name="twitter:url" content="https://languagefor3dscenes.github.io/ICCV2023"/>
+  <meta name="twitter:description" content="Language for 3D Scenes, ECCV 2022 Workshop"/>
+  -->
+  <!-- CSS  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+  <link rel="stylesheet" href="static/css/main.css" media="screen,projection">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+  <style>
+
+    .people-pic {
+      max-width: 125px;
+      max-height: 125px;
+      /*width:300px;*/
+      /*height:300px;*/
+      object-fit: cover;
+      border-radius: 50%;
+  }
+  </style>
+</head>
+
+  <body>
+
+    <!-- <div class="top-strip"></div> -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/"></a>
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="navbar-collapse collapse" id="navbar-main">
+      <ul class="nav navbar-nav">
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#cfp">Call for Papers</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#speakers">Invited Speakers</a></li>
+        <li><a href="#organizers">Organizers</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+
+    <div class="container">
+      <div class="page-content">
+          <p><br /></p>
+<div class="row">
+  <div class="col-xs-12">
+    <center><h1>The 2nd Agentic AI for Medicine Workshop</h1></center>
+    <center><h1>at MICCAI 2026</h1></center>
+    <!-- <center><h2>at MICCAI 2026</h2></center> -->
+    <center>Date and Room: TBC</center>
+  </div>
+</div>
+
+<hr />
+
+
+<!-- <br>
+  <center>
+  <h1 style="color:red"><a href="https://www.youtube.com/watch?v=gyJDGrbLknI">The <b>video recording</b> of this workshop is here!</a></h1>
+  </center>
+<br>
+
+<div class="alert alert-info" role="alert">
+  <b>Join Zoom Meeting  <a href="https://kaust.zoom.us/j/95818223470">here</a>.</b>
+</div>
+ -->
+
+
+<div class="row" id="teaser">  
+    <div style="text-align: center;">  
+    <img src="static/img/site/teaser.png" style="width: 80%; height: auto;
+		transform: scaleX(1.2);"/>
+  </div>
+</div>
+
+
+<!-- 
+<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> 
+  <img src="static/img/site/teaser.png">
+</div>
+<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> 
+  <img src="static/img/site/b.png">
+</div>
+ -->
+
+
+
+
+
+
+<p><br /></p>
+<div class="row" id="intro">
+  <div class="col-xs-12">
+    <h2>Introduction</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <p>
+    Agentic AI is emerging as a new paradigm in medical AI, following the eras of predictive AI and, more recently, generative AI. Building on the momentum from its inaugural edition, the 2nd Workshop on Agentic AI for Medicine continues to explore how autonomous and proactive AI systems can support medical vision, diagnosis, clinical decision-making, intervention, and robotics.    
+  </p>
+    <p>
+      Unlike previous generations of medical AI, which execute predefined functions or generate outputs passively, agentic AI systems can perceive, plan, act, and reflect using large foundation models as their cognitive core. They can integrate domain-specific tools, reason over clinical guidelines, manage longitudinal patient data, and take autonomous actions within simulated or physical environments. Recent applications include AI-driven molecular design and chemical synthesis, agent-enabled clinical diagnosis, surgical vision with long-term memory, and embodied control of medical robots. Specialized agents can also collaborate as committees for complex diagnostic or treatment workflows, and they can generate executable code to reduce technical barriers for clinicians. 
+          </p>
+    <p>
+      This 2nd Workshop on Agentic AI for Medicine aims to showcase the latest research, foster multi-disciplinary discussion, and identify opportunities, challenges, and risks associated with this burgeoning field. It serves as a forum for the medical imaging, clinical AI, robotics, and healthcare communities to chart the path toward safe, trusted, and high-impact agentic AI systems for future medical practice.
+    </p>
+  </div>
+</div>
+
+<p><br /></p>
+<div class="row" id="cfp">
+  <div class="col-xs-12">
+    <h2>Call for Papers</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <p>
+    We welcome submissions to this workshop. Topics include but are not limted to:
+  </p>
+
+    <p>1.  New theories, principles, and structures of medical and clinical AI agents</p>
+    <p>2.  New reasoning, planning, and decision-making strategies of medical and clinical AI agents</p>
+    <p>3.  New evaluation paradigms and benchmarks of medical and clinical AI agents</p>
+    <p>4.  Large-scale datasets and tool usage repositories for developing medical and clinical AI agents</p>
+    <p>5.  Adversarial robustness of medical and clinical AI agents</p>
+    <p>6.  Applications of AI agents in medicine and healthcare</p>
+    <p>7.  Scaling law of medical and clinical AI agents</p>
+    <p>8.  Interpretability and explainability of medical and clinical AI agents</p>
+    <p>9.  Large-scale agent-based modelling in digital health and medicine</p>
+    <p>10. Multiagent systems in medicine and healthcare</p>
+    <p>11. Decentralized methods for developing and deploying medical and clinical AI agents</p>
+    <p>12. AI agent ethics, safety, privacy, and regulations in medicine and healthcare </p>
+
+          
+    <p>
+      To recognize excellence, we will present two awards: <span style="color:#FF0000;font-weight:400;">Best Workshop Paper</span> and <span style="color:#FF0000;font-weight:400;">Best Workshop Poster</span>, each featuring an award certificate and a cash prize. 
+    </p>
+
+    <p>
+      <b>Submission portal:</b> <a href="https://openreview.net/group?id=MICCAI.org/2026/Workshop/AgenticMed&referrer=%5BHomepage%5D(%2F)#tab-recent-activity">OpenReview Agentic AI for Medicine Workshop</a>    </p>
+        <p>
+      <b>Submission deadline:</b> 15 July 2026    </p>
+        <p>
+      <b>Notification to authors:</b> 31 July 2026    </p>
+        <p>
+      <b>Camera-ready submission:</b> 15 Aug 2026    </p>
+
+  </div>
+</div>
+
+<!--<p><br /></p>
+
+-->
+<p><br /></p>
+<div class="row" id="schedule">
+  <div class="col-xs-12">
+    <h2>Schedule</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+     <table class="table table-striped">
+      <tbody>
+        <tr>
+          <td>08:00-08:10</td>
+          <td>Welcome</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>08:10-08:35</td>
+          <td><b><a href="">Invited Talk 1</a></b> (Academic)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>08:35-9:00</td>
+          <td><b><a href="">Invited Talk 2</a></b> (Academic)</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>9:00-10:00</td>
+          <td>Oral Session 1</td>
+            <td>
+   <!--           • <b><a href="https://xpandora.github.io/">Tianyi Xie</a></b> (UCLA) - Towards Physics-Informed Content Generation<br/>
+             • <b><a href="https://shellguo.com/">Michelle Guo</a></b> (Stanford) - PGC: Physics-Based Gaussian Cloth from a Single Pose<br/>
+             • <b><a href="https://people.mpi-inf.mpg.de/~nkairand/">Navami Kairanda</a></b> (MPI) - Unfolding Cloth: Neural Deformation Fields for Simulation and Monocular Tracking -->
+           </td>
+        </tr>
+
+<!--         <tr>
+          <td>11:15-12:00</td>
+          <td><b><a href="https://yangzzzy.github.io/">Yin Yang</a></b> (University of Utah)</td>
+          <td>A New Paradigm for Parallel Simulation</td>
+        </tr> -->
+        
+        <tr>
+          <td>10:00-10:20</td>
+          <td>Coffee Break and Poster Session</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>10:20-10:45</td>
+          <td><b><a href="">Invited Talk 3</a></b> (Industrial)</td>
+          <td></td>
+        </tr>
+        
+        <tr>
+          <td>10:45-11:10</td>
+          <td><b><a href="">Invited Talk 4</a></b> (Clinical)</td>
+          <td></td>
+        </tr>
+        
+  <!--       <tr>
+          <td>14:30-14:45</td>
+          <td>Coffee Break</td>
+          <td></td>
+        </tr> -->
+
+        <tr>
+          <td>11:10-12:10</td>
+          <td>Oral Session 2</td>
+          <td>
+<!--              • <b><a href="https://changy1506.github.io/">Yue Chang</a></b> (UToronto) - Fast Physics through Eigenanalysis over the Shape Space<br/>
+             • <b><a href="https://jianghanxiao.github.io/">Hanxiao Jiang</a></b> (Columbia) - PhysTwin: Physics-Informed Modelling from Videos<br/>
+             • <b><a href="https://people.csail.mit.edu/liyifei/">Yifei Li</a></b> (MIT) - Differentiable Simulation for Vision-Driven Digital Avatars -->
+           </td>
+        </tr>
+
+<!--         <tr>
+          <td>15:30-16:15</td>
+          <td><b><a href="https://www.cs.umd.edu/~lin/">Ming Lin</a></b> (University of Maryland)</td>
+          <td>Physics-Informed Visual Learning</td>
+        </tr>
+ -->
+        <tr>
+          <td>12:10-12:25</td>
+          <td>Award Announcement</td>
+          <td>
+   <!--          • David Levin<br/>
+            • Jiajun Wu<br/>
+            • Ming Lin<br/>
+            • Shenlong Wang<br/>
+            • Yin Yang<br/> -->
+          </td>
+        </tr>
+
+        <tr>
+          <td>12:25-12:30</td>
+          <td>Closing Remarks</td>
+          <td></td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<p><br /></p>
+<div class="row" id="speakers">
+  <div class="col-xs-12">
+    <h2>Invited Speakers</h2>
+  </div>
+</div>
+
+<!-- <div class="row">
+  <div class="col-md-2">
+    <a href="https://www.cs.cornell.edu/~weichiu/"><img class="people-pic" style="float:left;margin-right:50px;" src="static/img/people/weichiu-mit-min.png" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://www.cs.cornell.edu/~weichiu/">Wei-Chiu Ma</a></b> is an Assistant Professor of Computer Science at Cornell University. His research lies at the intersection of 3D/4D computer vision and robotics. He is interested in building AI systems that can understand, reconstruct, and re-simulate the dynamic world, and leverage these capabilities to enable more robust autonomous systems or advance entertainment applications. Previously, he was a Senior Research Scientist at Uber ATG R&D and Waabi working on self-driving vehicles.
+    </p>
+  </div>
+</div>
+<p><br/></p>
+
+<div class="row">
+  <div class="col-md-2">
+    <a href="https://tsungyilin.info/"><img class="people-pic" style="float:left;margin-right:50px;" src="static/img/people/tsungyi.jpeg" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://tsungyilin.info/">Tsung-Yi Lin</a></b> is a principal research scientist at NVIDIA Research. He was previously at Google Research, Brain Team. He works on computer vision and machine learning. He did his PhD at Cornell University and Cornell Tech, where he was advised by Serge Belongie. He did his masters at University California, San Diego and his bachelors at National Taiwan University. He received the Best Student Paper Award for Focal Loss at ICCV 2017. He led the creation of the COCO dataset which received the PAMI Mark Everingham Prize at ICCV 2023 and Koenderink Prize at ECCV 2024.
+    </p>
+  </div>
+</div>
+<p><br/></p> 
+
+<div class="row">
+  <div class="col-md-2">
+    <a href="https://yangzzzy.github.io/"><img class="people-pic" style="float:left;margin-right:50px;" src="static/img/people/YinYang.jpg" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://yangzzzy.github.io/">Yin Yang</a></b> is an associate professor with Kahlert School of Computing, University of Utah. He co-directs Utah Graphics Lab with his colleague Cem Yuksel. He is also affiliated with Utah Robotic Center. Before joining the University of Utah (the birthplace of Computer Graphics), he was a faculty member at University of New Mexico and Clemson University. He received his Ph.D. from University of Texas at Dallas (with David Daniel fellowship). He is a recipient of the NSF CRII award (2015) and CAREER award (2019). His research aims to develop efficient and customized computing methods for challenging problems in Graphics, Simulation, Deep Learning, Vision, Robotics, and many other applied areas.
+    </p>
+  </div>
+</div>
+<p><br /></p>
+        
+<div class="row">
+  <div class="col-md-2">
+    <a href="https://www.cs.cmu.edu/~katef/"><img class="people-pic" style="float:left;margin-right:50px;" src="static/img/people/KaterinaFragkiadaki.png" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a></b> is the JPMorgan Chase Associate Professor in the Machine Learning Department at Carnegie Mellon University. She received her undergraduate degree in Electrical and Computer Engineering from the National Technical University of Athens, and her Ph.D. from the University of Pennsylvania. She subsequently held postdoctoral positions at UC Berkeley and Google Research. Her research focuses on enabling few-shot and continual learning for perception, action, and language grounding. Her work has been recognizedby the Best Ph.D. Thesis Award, NSF CAREER Award, AFOSR and DARPA Young Investigator Awards, as well as faculty research awards from Google, Toyota Research Institute, Amazon, NVIDIA, UPMC, and Sony. She served as a Program Chair for ICLR 2024.
+    </p>
+  </div>
+</div>
+<p><br /></p>
+
+<div class="row">
+  <div class="col-md-2">
+    <a href="https://jiajunwu.com/"><img class="people-pic" style="float:left;margin-right:50px;" src="static/img/people/Jiajun_Wu.jpg" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://jiajunwu.com/">Jiajun Wu</a></b> is an Assistant Professor of Computer Science and, by courtesy, of Psychology at Stanford University, working on computer vision, machine learning, and computational cognitive science. Before joining Stanford, he was a Visiting Faculty Researcher at Google Research. He received his PhD in Electrical Engineering and Computer Science from the Massachusetts Institute of Technology. Wu's research has been recognized through the Young Investigator Programs (YIP) by ONR and by AFOSR, the NSF CAREER award, the Okawa research grant, paper awards and finalists at ICCV, CVPR, SIGGRAPH Asia, CoRL, and IROS, dissertation awards from ACM, AAAI, and MIT, the 2020 Samsung AI Researcher of the Year, and faculty research awards from J.P. Morgan, Samsung, Amazon, and Meta.
+    </p>
+  </div>
+</div>
+<p><br/></p>
+
+<div class="row">
+  <div class="col-md-2">
+    <a href="https://www.cs.umd.edu/~lin/"><img class="people-pic" style="float:left;margin-right:50px;" src="static/img/people/Ming_Lin_UMIACS.jpg" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://www.cs.umd.edu/~lin/">Ming C. Lin</a></b> is a Distinguished University Professor at University of Maryland at College Park. She is also an Amazon Scholar, working on Virtual Try-On. Her research interests include Machine Learning, Differentiable Physics & Differentiable Programming, Physically-based Modeling, Simulation and Animation. She has received several honors and awards, including IEEE VGTC VR Technical Achievement Award, Washington Academy of Sciences Distinguished Career Award and several best paper awards. She is a Fellow of National Academy of Inventors, ACM, IEEE, Eurographics, ACM SIGGRAPH Academy, and IEEE VR Academy. She is an elected Board of Director (BOD) of Computing Research Association (CRA), as well as a member of the CRA-WP Board of Directors and EC of AsiaGraphics (AG).
+    </p>
+  </div>
+</div>
+<p><br /></p>
+
+</div> -->
+
+<p><br /></p>
+
+<div class="row" id="organizers">
+  <div class="col-xs-12">
+    <h2>Organizers</h2>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="col-xs-2">
+    <a href="https://baoru.netlify.app/">
+      <img class="people-pic" src="static/img/people/baoru_huang.jpg" />
+    </a>
+    <div class="people-name">
+      <a href="https://baoru.netlify.app/">Baoru Huang</a>
+      <h6>University of Liverpool</h6>
+    </div>
+  </div>
+
+  <div class="col-xs-2">
+    <a href="">
+      <img class="people-pic" src="static/img/people/imran.jpg" />
+    </a>
+    <div class="people-name">
+      <a href="https://imranrazzak.github.io/">Imran Razzak</a>
+      <h6>MBZUAI</h6>
+    </div>
+  </div>
+
+  <div class="col-xs-2">
+    <a href="">
+      <img class="people-pic" src="static/img/people/yuankai.jpg" />
+    </a>
+    <div class="people-name">
+      <a href="https://hrlblab.github.io/">Yuankai Huo</a>
+      <h6>Vanderbilt University</h6>
+    </div>
+  </div>
+
+  <div class="col-xs-2">
+    <a href="">
+      <img class="people-pic" src="static/img/people/shuo_li.jpg" />
+    </a>
+    <div class="people-name">
+      <a href="https://scholar.google.com/citations?user=6WNtJa0AAAAJ&hl=en">Shuo Li</a>
+      <h6>Case Western Reserve University</h6>
+    </div>
+  </div>
+
+    <div class="col-xs-2">
+    <a href="">
+      <img class="people-pic" src="static/img/people/danail_stoyanov.jpg" />
+    </a>
+    <div class="people-name">
+      <a href="https://scholar.google.com/citations?user=pGfEK6UAAAAJ&hl=en">Danail Stoyanov</a>
+      <h6>UCL</h6>
+    </div>
+  </div>
+
+
+</div>
+<p><br /></p>
+<p><br /></p>
+
+
+
+<p><br /></p>
+
+<div class="row" id="contact">
+  <div class="col-xs-12">
+    <h2>Contact</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <p>
+      Please contact <b>Baoru.Huang@liverpool.ac.uk</b> for workshop-related matters.
+    </p>
+  </div>
+</div>
+<p><br /></p>
+
+<hr />
+
+<div class="row">
+  <div class="col-xs-12">
+    <h2>Acknowledgments</h2>
+  </div>
+</div>
+<p><a name="/acknowledgements"></a></p>
+<div class="row">
+  <div class="col-xs-12">
+    <p>
+      Thanks to <span style="color:#1a1aff;font-weight:400;"> <a href="https://languagefor3dscenes.github.io/">languagefor3dscenes</a></span> for the webpage format.
+    </p>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+  </body>
+</html>
